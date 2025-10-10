@@ -2,7 +2,7 @@
 
 [![Socket Security Scan](https://github.com/yourusername/socket-nodegoat-demo/actions/workflows/socket-scan.yml/badge.svg)](https://github.com/yourusername/socket-nodegoat-demo/actions/workflows/socket-scan.yml)
 
-This repository demonstrates how to use the [Socket npm CLI](https://docs.socket.dev/docs/socket-cli#/) inside GitHub Actions to run full-application reachability scans on Node.js projects.
+This repository demonstrates how to use the [Socket CLI](https://docs.socket.dev/docs/socket-cli#/) (`@socketsecurity/cli` npm package) inside GitHub Actions to run full-application reachability scans on Node.js projects.
 
 Based on the popular [OWASP NodeGoat](https://github.com/OWASP/NodeGoat) security training application, this streamlined demo shows how Socket Security integrates seamlessly into CI/CD pipelines.
 
@@ -10,7 +10,7 @@ Based on the popular [OWASP NodeGoat](https://github.com/OWASP/NodeGoat) securit
 
 ## 🎯 What This Demo Shows
 
-- ✅ **npm CLI Integration**: Uses `@socketsecurity/socket` package (not Python CLI)
+- ✅ **npm CLI Integration**: Uses `@socketsecurity/cli` package (not Python CLI)
 - ✅ **Reachability Analysis**: Generates `.socket.facts.json` for Tier 1 reachability insights
 - ✅ **GitHub Actions Workflow**: Automated scanning on every push and pull request
 - ✅ **Real Dependencies**: Scans actual npm packages (Express, MongoDB, Helmet, etc.)
@@ -149,7 +149,7 @@ This script will:
 
 ```bash
 # Install Socket CLI globally
-npm install -g @socketsecurity/socket
+npm install -g @socketsecurity/cli
 
 # Install project dependencies
 npm ci
@@ -244,10 +244,10 @@ Socket's reachability analysis provides:
 A: Make sure you've added your Socket API token as a repository secret (see [Setup Instructions](#setup-instructions))
 
 **Q: `.socket.facts.json` is not generated**
-A: Ensure you're using Node.js 20+ and the latest version of `@socketsecurity/socket`
+A: Ensure you're using Node.js 20+ and the latest version of `@socketsecurity/cli`
 
 **Q: Local scan fails with "command not found"**
-A: Install Socket CLI globally: `npm install -g @socketsecurity/socket`
+A: Install Socket CLI globally: `npm install -g @socketsecurity/cli`
 
 **Q: Scan takes a long time**
 A: This is normal for first runs. Subsequent scans are faster due to caching.

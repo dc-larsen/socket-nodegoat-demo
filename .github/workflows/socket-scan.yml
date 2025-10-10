@@ -36,7 +36,7 @@ jobs:
         run: npm ci
 
       - name: Install Socket CLI (npm)
-        run: npm install -g @socketsecurity/socket
+        run: npm install -g @socketsecurity/cli
 
       - name: Run Socket Reachability Scan
         env:

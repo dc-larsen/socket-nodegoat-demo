@@ -46,7 +46,7 @@ echo ""
 
 # Install Socket CLI globally
 echo -e "${YELLOW}[2/5]${NC} Installing Socket CLI (npm)..."
-if npm install -g @socketsecurity/socket; then
+if npm install -g @socketsecurity/cli; then
     echo -e "${GREEN}✅ Socket CLI installed successfully${NC}"
 else
     echo -e "${RED}❌ Failed to install Socket CLI${NC}"
