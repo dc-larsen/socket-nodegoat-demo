@@ -77,26 +77,26 @@ cd socket-nodegoat-demo
 npm install
 ```
 
-### 2. Get Your Socket API Key
+### 2. Get Your Socket API Token
 
 1. Log in to [Socket Security](https://socket.dev)
 2. Navigate to **Settings → API Keys**
-3. Generate a new API key for GitHub Actions
+3. Generate a new API token for GitHub Actions
 
 ### 3. Configure GitHub Secrets
 
-Add your Socket API key as a repository secret:
+Add your Socket API token as a repository secret:
 
 ```bash
 # Using GitHub CLI
-gh secret set SOCKET_SECURITY_API_KEY
+gh secret set SOCKET_SECURITY_API_TOKEN
 
 # Or manually:
 # 1. Go to your repository on GitHub
 # 2. Settings → Secrets and variables → Actions
 # 3. New repository secret
-# 4. Name: SOCKET_SECURITY_API_KEY
-# 5. Value: your_socket_api_key_here
+# 4. Name: SOCKET_SECURITY_API_TOKEN
+# 5. Value: your_socket_api_token_here
 ```
 
 ### 4. Trigger the Workflow
@@ -154,8 +154,8 @@ npm install -g @socketsecurity/socket
 # Install project dependencies
 npm ci
 
-# Set your API key
-export SOCKET_SECURITY_API_KEY="your_api_key_here"
+# Set your API token
+export SOCKET_SECURITY_API_TOKEN="your_api_token_here"
 
 # Run reachability scan
 socket scan reach --target-path .
@@ -240,8 +240,8 @@ Socket's reachability analysis provides:
 
 ### Common Issues
 
-**Q: The workflow fails with "SOCKET_SECURITY_API_KEY not set"**
-A: Make sure you've added your Socket API key as a repository secret (see [Setup Instructions](#setup-instructions))
+**Q: The workflow fails with "SOCKET_SECURITY_API_TOKEN not set"**
+A: Make sure you've added your Socket API token as a repository secret (see [Setup Instructions](#setup-instructions))
 
 **Q: `.socket.facts.json` is not generated**
 A: Ensure you're using Node.js 20+ and the latest version of `@socketsecurity/socket`

@@ -16,7 +16,7 @@
 # Requirements:
 #   - Node.js 20 or higher
 #   - npm
-#   - SOCKET_SECURITY_API_KEY environment variable (optional for some features)
+#   - SOCKET_SECURITY_API_TOKEN environment variable (optional for some features)
 ###############################################################################
 
 set -e  # Exit on any error
@@ -66,11 +66,11 @@ fi
 echo -e "${GREEN}✅ Dependencies installed${NC}"
 echo ""
 
-# Check for API key (optional warning)
-if [ -z "$SOCKET_SECURITY_API_KEY" ]; then
-    echo -e "${YELLOW}⚠️  Warning: SOCKET_SECURITY_API_KEY not set${NC}"
-    echo "   Some features may be limited without an API key."
-    echo "   To set it: export SOCKET_SECURITY_API_KEY='your_key_here'"
+# Check for API token (optional warning)
+if [ -z "$SOCKET_SECURITY_API_TOKEN" ]; then
+    echo -e "${YELLOW}⚠️  Warning: SOCKET_SECURITY_API_TOKEN not set${NC}"
+    echo "   Some features may be limited without an API token."
+    echo "   To set it: export SOCKET_SECURITY_API_TOKEN='your_token_here'"
     echo ""
 fi
 
@@ -85,7 +85,7 @@ if socket scan reach --target-path .; then
 else
     echo ""
     echo -e "${RED}❌ Socket scan failed${NC}"
-    echo "   Check that you have a valid SOCKET_SECURITY_API_KEY set"
+    echo "   Check that you have a valid SOCKET_SECURITY_API_TOKEN set"
     exit 1
 fi
 echo ""
