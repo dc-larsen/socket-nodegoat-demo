@@ -66,3 +66,4 @@ jobs:
           name: socket-facts
           path: ${{ github.workspace }}/.socket.facts.json
           if-no-files-found: error
+          include-hidden-files: true
