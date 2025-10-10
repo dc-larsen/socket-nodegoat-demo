@@ -157,8 +157,8 @@ npm ci
 # Set your API token
 export SOCKET_SECURITY_API_TOKEN="your_api_token_here"
 
-# Run reachability scan
-socket scan reach --target-path .
+# Run reachability scan (specify your org if prompted)
+socket scan reach . --org your-org-slug
 
 # Check the results
 ls -lh .socket.facts.json

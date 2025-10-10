@@ -47,8 +47,8 @@ jobs:
           echo "Working directory: $(pwd)"
           echo "Package.json exists: $(test -f package.json && echo 'yes' || echo 'no')"
 
-          # Run scan in current directory (no prompts needed)
-          socket scan reach .
+          # Run scan in current directory with org specified (no prompts needed)
+          socket scan reach . --org david-s-github
 
           echo ""
           echo "✅ Socket scan complete. Checking for .socket.facts.json..."

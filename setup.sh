@@ -77,16 +77,21 @@ fi
 # Run Socket reachability scan
 echo -e "${YELLOW}[4/5]${NC} Running Socket reachability scan..."
 echo "   This may take a minute on first run..."
+echo "   Note: You may need to specify --org flag for your organization"
 echo ""
 
-if socket scan reach --target-path .; then
+# Try to run scan (user may need to specify --org)
+if socket scan reach . 2>&1; then
     echo ""
     echo -e "${GREEN}✅ Socket scan completed successfully${NC}"
 else
+    EXIT_CODE=$?
     echo ""
-    echo -e "${RED}❌ Socket scan failed${NC}"
-    echo "   Check that you have a valid SOCKET_SECURITY_API_TOKEN set"
-    exit 1
+    echo -e "${YELLOW}⚠️  Socket scan encountered an issue${NC}"
+    echo "   If prompted for an organization, run:"
+    echo "   socket scan reach . --org your-org-slug"
+    echo ""
+    echo "   Continuing anyway to check for .socket.facts.json..."
 fi
 echo ""
 
