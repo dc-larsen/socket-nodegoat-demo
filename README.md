@@ -1,6 +1,6 @@
 # Socket Security GitHub Actions Demo
 
-[![Socket Security Scan](https://github.com/yourusername/socket-nodegoat-demo/actions/workflows/socket-scan.yml/badge.svg)](https://github.com/yourusername/socket-nodegoat-demo/actions/workflows/socket-scan.yml)
+[![Socket Security Scan](https://github.com/dc-larsen/socket-nodegoat-demo/actions/workflows/socket-scan.yml/badge.svg)](https://github.com/dc-larsen/socket-nodegoat-demo/actions/workflows/socket-scan.yml)
 
 This repository demonstrates how to use the [Socket CLI](https://docs.socket.dev/docs/socket-cli#/) (`@socketsecurity/cli` npm package) inside GitHub Actions to run full-application reachability scans on Node.js projects.
 
