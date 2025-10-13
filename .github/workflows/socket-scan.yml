@@ -17,15 +17,18 @@ jobs:
   socket-security:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Changed from 'read' to allow committing .socket.facts.json
+      contents: write  # Allow committing .socket.facts.json
       pull-requests: write
       issues: write
+      id-token: write  # For GitHub token authentication
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: ${{ github.event_name == 'pull_request' && 2 || 0 }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -59,21 +62,30 @@ jobs:
             echo "⚠️ No .socket.facts.json found."
           fi
 
-      - name: Commit Socket Facts to repository
-        if: success()
+      - name: Commit the Socket Facts artifact file
+        if: success() && github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add .socket.facts.json
 
-          # Only commit if there are changes
           if git diff --staged --quiet; then
-            echo "No changes to .socket.facts.json, skipping commit"
-          else
-            git commit -m "Update Socket reachability facts [skip ci]"
-            git push
-            echo "✅ .socket.facts.json committed to repository"
+            echo "No changes to commit"
+            exit 0
           fi
+
+          msg="Update socket.facts.json - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+          git commit -m "$msg [skip ci]"
+
+          # Pull latest changes with rebase before pushing
+          git pull --rebase origin main || {
+            echo "Rebase failed, attempting merge"
+            git pull origin main
+          }
+
+          git push
+          echo "✅ .socket.facts.json committed to repository"
 
       - name: Upload Socket Facts artifact
         if: success()
