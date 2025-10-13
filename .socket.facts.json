@@ -1,0 +1,2766 @@
+{
+  "components": [
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "85970163696",
+      "dependencies": [
+        "32142"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 728,
+          "end": 1061
+        }
+      ],
+      "files": "QUfkP1YyVEdt8pJFfPoMGuftL8F5oRw_cF75H2SY-7_0",
+      "toplevelAncestors": [
+        "83468933110"
+      ],
+      "type": "npm",
+      "namespace": "@mongodb-js",
+      "name": "saslprep",
+      "version": "1.3.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "89744035",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 1109,
+          "end": 1388
+        }
+      ],
+      "files": "QZtjgoJXRe116pxxYKehSOoHCFTDqObRt7F2Ik7gMeGY",
+      "toplevelAncestors": [
+        "83468933110"
+      ],
+      "type": "npm",
+      "namespace": "@types",
+      "name": "webidl-conversions",
+      "version": "7.0.3"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15579979625",
+      "dependencies": [
+        "89744035"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 1428,
+          "end": 1767
+        }
+      ],
+      "files": "Qsxa5qyNiAphnxOuLx5si9nBUYnD_xvsKVjrmusEm34I",
+      "toplevelAncestors": [
+        "83468933110"
+      ],
+      "type": "npm",
+      "namespace": "@types",
+      "name": "whatwg-url",
+      "version": "11.0.5"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "16812",
+      "dependencies": [
+        "13099",
+        "17647"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 1797,
+          "end": 2196
+        }
+      ],
+      "files": "QKgRlSCbJ4wI1GE6d-zlPJSQfbFPPDOmkstSC-R3BlBI",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "accepts",
+      "version": "1.3.8"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "30428",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 2227,
+          "end": 2549
+        }
+      ],
+      "files": "QVq84SMFkXS1AL8gLM1_231QUOOWEmpES8Zu_EubAWwo",
+      "toplevelAncestors": [
+        "404776390"
+      ],
+      "type": "npm",
+      "name": "amdefine",
+      "version": "1.0.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "16851",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 2585,
+          "end": 2847
+        }
+      ],
+      "files": "QgYxHXttyH4tP2vLxL9K8vONLTB_zwNLptIqQD-Gm2_w",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "array-flatten",
+      "version": "1.1.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "30432",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 2875,
+          "end": 3099
+        }
+      ],
+      "files": "QYGXvMsEEuZaR3zTkbN63HDai60-3clj5D2VwE-Fz9bM",
+      "toplevelAncestors": [
+        "404776390"
+      ],
+      "type": "npm",
+      "name": "async",
+      "version": "0.2.10"
+    },
+    {
+      "direct": true,
+      "dev": false,
+      "dead": false,
+      "id": "47042049",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 3135,
+          "end": 3584
+        },
+        {
+          "file": "package.json",
+          "start": 577,
+          "end": 584
+        }
+      ],
+      "files": "QdtDOG13ZaiDVQ3DtZkpnYiVJGAUX78AX2mARKdZ5fP0",
+      "toplevelAncestors": [],
+      "type": "npm",
+      "name": "bcrypt-nodejs",
+      "version": "0.0.3"
+    },
+    {
+      "direct": true,
+      "dev": false,
+      "dead": false,
+      "id": "15886814509",
+      "dependencies": [
+        "16937",
+        "17023",
+        "13159",
+        "17082",
+        "17085",
+        "17325",
+        "12802",
+        "13589",
+        "15831535617",
+        "28796",
+        "13905",
+        "18067"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 3618,
+          "end": 4348
+        },
+        {
+          "file": "package.json",
+          "start": 386,
+          "end": 395
+        }
+      ],
+      "files": "Qx34JaAC6bmFnFFuoPOJkg3zhh5_KGXjb7jUq96TDrxc",
+      "toplevelAncestors": [],
+      "type": "npm",
+      "name": "body-parser",
+      "version": "1.20.3"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "36858321781",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 4375,
+          "end": 4684
+        }
+      ],
+      "files": "QMwqbiLiSd_K4Gz2FeiRDw9P-UtDWfTr3quL3jsQE1H8",
+      "toplevelAncestors": [
+        "83468933110"
+      ],
+      "type": "npm",
+      "name": "bson",
+      "version": "6.10.4"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "16937",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 4712,
+          "end": 5011
+        }
+      ],
+      "files": "Q00UuiVrnfuu1Jj0UfNDiUx0Q_ydidMxIkighnAq3coI",
+      "toplevelAncestors": [
+        "15886814509"
+      ],
+      "type": "npm",
+      "name": "bytes",
+      "version": "3.1.2"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15946910589",
+      "dependencies": [
+        "7620851572",
+        "52320"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 5057,
+          "end": 5490
+        }
+      ],
+      "files": "QlU0xeE89yaBjOopxC1eFkZM1m1Mw4n5-eRVWcN-BEW8",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "call-bind-apply-helpers",
+      "version": "1.0.2"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15957763002",
+      "dependencies": [
+        "15946910589",
+        "15952836688"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 5523,
+          "end": 6024
+        }
+      ],
+      "files": "Qrjtp4TauQ3k6pD9pCeg4sF5cnfalkgc9pCO_AdcRzXA",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "call-bound",
+      "version": "1.0.4"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "41883",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 6056,
+          "end": 6365
+        }
+      ],
+      "files": "QaPrj_0dghW2694pz8JhR8tK22FDarfxC5_MlY0HiGw4",
+      "toplevelAncestors": [
+        "404776390"
+      ],
+      "type": "npm",
+      "name": "camelcase",
+      "version": "1.2.1"
+    },
+    {
+      "direct": true,
+      "dev": false,
+      "dead": false,
+      "id": "15695039975",
+      "dependencies": [
+        "404776390",
+        "15731270557"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 6399,
+          "end": 11051
+        },
+        {
+          "file": "package.json",
+          "start": 450,
+          "end": 458
+        }
+      ],
+      "files": "QqiiQCx2SKOaF2pLYWowR5JfPEzDCxAEF3H842cj83zY",
+      "toplevelAncestors": [],
+      "type": "npm",
+      "name": "consolidate",
+      "version": "1.0.4"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "13221",
+      "dependencies": [
+        "13054"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 11093,
+          "end": 11484
+        }
+      ],
+      "files": "QVVh1s2nRuOR-IMafM5sYxgXxn_S6rL99NBr66QxtZ_8",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "content-disposition",
+      "version": "0.5.4"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17023",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 11519,
+          "end": 11832
+        }
+      ],
+      "files": "QxUflkmJKmtysJi7d1sTUxM8DVq8EfzCYAzmskNWiDcM",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "content-type",
+      "version": "1.0.5"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15896866924",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 11861,
+          "end": 12162
+        }
+      ],
+      "files": "QOU_Bk6v3xhTVZf4-K3pTd7YSrTRJo3yMd8YmtWHwVEY",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "cookie",
+      "version": "0.7.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17026",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 12201,
+          "end": 12469
+        }
+      ],
+      "files": "Q6cIyjEMkToSKjZfKtHC9JSpyvkWbdwCUkNrJxsznwLQ",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "cookie-signature",
+      "version": "1.0.6"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "13159",
+      "dependencies": [
+        "12550"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 12497,
+          "end": 12798
+        }
+      ],
+      "files": "Q4d27MBVMQ0q7wKvSWEljQHPtXkxXqxUsE5X0O1wlTHA",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898",
+        "51502193327"
+      ],
+      "type": "npm",
+      "name": "debug",
+      "version": "2.6.9"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "13915",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 12831,
+          "end": 13142
+        }
+      ],
+      "files": "QJN5Nu3Q4KsDSW9PZkijYASbxrzIvhabRtNi9_bY-Tok",
+      "toplevelAncestors": [
+        "404776390"
+      ],
+      "type": "npm",
+      "name": "decamelize",
+      "version": "1.2.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17082",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 13169,
+          "end": 13466
+        }
+      ],
+      "files": "Qgga5Oyv1Tlf0ciaZzOmLEKM6xdeN8ilfwuy3xXAsE3s",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898",
+        "51502193327"
+      ],
+      "type": "npm",
+      "name": "depd",
+      "version": "2.0.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17085",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 13496,
+          "end": 13839
+        }
+      ],
+      "files": "QFiGj4oAH_qCCswtKMFcoc4QxF_k0OjmRpAcYdBrqIHs",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "destroy",
+      "version": "1.2.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15923218962",
+      "dependencies": [
+        "15946910589",
+        "7620851572",
+        "15919437865"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 13874,
+          "end": 14321
+        }
+      ],
+      "files": "QTlM2pJD2V_P-t01loOqzuRSJRs6ygZUF61fkOSPP4Hs",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "dunder-proto",
+      "version": "1.0.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "13649",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 14352,
+          "end": 14604
+        }
+      ],
+      "files": "QcOCRf9Z7D-5DglqGgNVYdLXWIZoRjZH8OXbZqdGM_Pk",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "ee-first",
+      "version": "1.1.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "13872659699",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 14636,
+          "end": 14943
+        }
+      ],
+      "files": "QlwpD0jy83-axs-Q-aCP-AYjqbeHQXOYcWe1LXHl3dI8",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "encodeurl",
+      "version": "2.0.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15920362086",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 14984,
+          "end": 15309
+        }
+      ],
+      "files": "QJvctrSkFcwScmnMFPD3C04XywNBjqQLDCW90dvYGJ1Q",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "es-define-property",
+      "version": "1.0.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "7620851572",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 15341,
+          "end": 15648
+        }
+      ],
+      "files": "QOmVYXal7X1-cTs6V5-mXacpXfS0986DxKHBovlss-QQ",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "es-errors",
+      "version": "1.3.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15934512046",
+      "dependencies": [
+        "7620851572"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 15686,
+          "end": 16068
+        }
+      ],
+      "files": "QmzLL4a-qPz8LXTVikKf9dmE06QFrjerEePGs-ODMW68",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "es-object-atoms",
+      "version": "1.1.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17137",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 16102,
+          "end": 16360
+        }
+      ],
+      "files": "QA-bbbm2QUeOYwFqp6lU8A7OaKdEoygjF6xOVoXKadlk",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "escape-html",
+      "version": "1.0.3"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17173",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 16387,
+          "end": 16684
+        }
+      ],
+      "files": "Q6T45-yi3DNc4fQLW-X3KyMfnNM6Tg7LgW3KIYNNwdGE",
+      "toplevelAncestors": [
+        "15920039898",
+        "38864419835"
+      ],
+      "type": "npm",
+      "name": "etag",
+      "version": "1.8.1"
+    },
+    {
+      "direct": true,
+      "dev": false,
+      "dead": false,
+      "id": "15920039898",
+      "dependencies": [
+        "16812",
+        "16851",
+        "15886814509",
+        "13221",
+        "17023",
+        "15896866924",
+        "17026",
+        "13159",
+        "17082",
+        "13872659699",
+        "17137",
+        "17173",
+        "15887721446",
+        "17256",
+        "17325",
+        "1029599353",
+        "13875",
+        "13589",
+        "17722",
+        "15920038736",
+        "17778",
+        "15831535617",
+        "17798",
+        "13054",
+        "15886861601",
+        "15887673874",
+        "17910",
+        "17954",
+        "13905",
+        "18084",
+        "18092"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 16714,
+          "end": 18133
+        },
+        {
+          "file": "package.json",
+          "start": 356,
+          "end": 365
+        }
+      ],
+      "files": "QoIE31SSF7S2bWMJaaVf8A86UFRZRrZbRNZ0mQvRRTNw",
+      "toplevelAncestors": [],
+      "type": "npm",
+      "name": "express",
+      "version": "4.21.2"
+    },
+    {
+      "direct": true,
+      "dev": false,
+      "dead": false,
+      "id": "51502193327",
+      "dependencies": [
+        "13159",
+        "17082",
+        "15898134599",
+        "6593852314",
+        "51467206393",
+        "17722",
+        "13054",
+        "61268"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 18171,
+          "end": 18766
+        },
+        {
+          "file": "package.json",
+          "start": 420,
+          "end": 429
+        }
+      ],
+      "files": "Q_2P5Bpv3yldmndjWvNLx3GqWaSgxF182ZrHuz9SbeEE",
+      "toplevelAncestors": [],
+      "type": "npm",
+      "name": "express-session",
+      "version": "1.18.2"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15898134599",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 18824,
+          "end": 19125
+        }
+      ],
+      "files": "QLaEfcPOvfDomAm95gtZ5BQYaU6fgR8IcD-MqFC3-XOM",
+      "toplevelAncestors": [
+        "51502193327"
+      ],
+      "type": "npm",
+      "name": "cookie",
+      "version": "0.7.2"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "6593852314",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 19193,
+          "end": 19461
+        }
+      ],
+      "files": "QVl9bVTKX3AlALtMf9cFMMsCbU8HCYUocUUf-kOkLnps",
+      "toplevelAncestors": [
+        "51502193327"
+      ],
+      "type": "npm",
+      "name": "cookie-signature",
+      "version": "1.0.7"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15887721446",
+      "dependencies": [
+        "13159",
+        "13872659699",
+        "17137",
+        "13589",
+        "17722",
+        "17954",
+        "18067"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 19496,
+          "end": 20050
+        }
+      ],
+      "files": "QGYwsZxF0xxb3Fayu76MrAH5K1hO-KRIFJBIhWeE28h8",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "finalhandler",
+      "version": "1.3.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17251",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 20082,
+          "end": 20389
+        }
+      ],
+      "files": "Qzo7m2GlH06auv3QjlPmZg6xvpwxo9WEwLT8KvbnfvPU",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "forwarded",
+      "version": "0.2.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17256",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 20417,
+          "end": 20716
+        }
+      ],
+      "files": "Qxi_3mks1fTLfrDVST9EqxZK0BMr96EXCnJ4ll067rH8",
+      "toplevelAncestors": [
+        "15920039898",
+        "38864419835"
+      ],
+      "type": "npm",
+      "name": "fresh",
+      "version": "0.5.2"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "52320",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 20752,
+          "end": 21094
+        }
+      ],
+      "files": "Q8RLYJxhltm4hWpVYQBp1LQkko3mpGJf-aGjrWCMZU48",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "function-bind",
+      "version": "1.1.2"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15952836688",
+      "dependencies": [
+        "15946910589",
+        "15920362086",
+        "7620851572",
+        "15934512046",
+        "52320",
+        "15928137879",
+        "15919437865",
+        "15918699840",
+        "11902329205",
+        "15923984496"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 21130,
+          "end": 21900
+        }
+      ],
+      "files": "QBBNY0DeMeXfIRjYCQsItu2vVcfujudx4urV608KSOTo",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "get-intrinsic",
+      "version": "1.3.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15928137879",
+      "dependencies": [
+        "15923218962",
+        "15934512046"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 21932,
+          "end": 22342
+        }
+      ],
+      "files": "Qnu_-aM7LBKr0aqYexnQYdgxCuDBdx0IsYi8KXojQ3do",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "get-proto",
+      "version": "1.0.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15919437865",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 22369,
+          "end": 22746
+        }
+      ],
+      "files": "QEEY8dT_BussL5uFFos2api-9mm4QDqdqUC92e0-GOLI",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "gopd",
+      "version": "1.2.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15918699840",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 22780,
+          "end": 23171
+        }
+      ],
+      "files": "QU-TEzmb7qhDH6ngTskXZdaoy02qvYxMJ47IhLKUOURw",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "has-symbols",
+      "version": "1.1.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "11902329205",
+      "dependencies": [
+        "52320"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 23200,
+          "end": 23568
+        }
+      ],
+      "files": "Qes-oIov_ZpkFEjKMm8QMlRWZXTNA0InAPyMFBGfhzQE",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "hasown",
+      "version": "2.0.2"
+    },
+    {
+      "direct": true,
+      "dev": false,
+      "dead": false,
+      "id": "15894992228",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 23597,
+          "end": 23900
+        },
+        {
+          "file": "package.json",
+          "start": 546,
+          "end": 554
+        }
+      ],
+      "files": "QXhbyRRq4gWPtlgC918LwAgfiyKkTbDqydnPruVXyH8g",
+      "toplevelAncestors": [],
+      "type": "npm",
+      "name": "helmet",
+      "version": "7.2.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17325",
+      "dependencies": [
+        "17082",
+        "12777",
+        "17910",
+        "17954",
+        "18019"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 23934,
+          "end": 24428
+        }
+      ],
+      "files": "Qjq1nQ0NdNCoYCrG1gLMMfE34kmtrBgQQ0P_S3RTObf4",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "http-errors",
+      "version": "2.0.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "12802",
+      "dependencies": [
+        "12804"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 24461,
+          "end": 24846
+        }
+      ],
+      "files": "Q5VZw754DeHkaAevC_vCj1hPa-nV88TScXCRGzNYwico",
+      "toplevelAncestors": [
+        "15886814509"
+      ],
+      "type": "npm",
+      "name": "iconv-lite",
+      "version": "0.4.24"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "12777",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 24877,
+          "end": 25129
+        }
+      ],
+      "files": "QyoOMiCwuXfIBFC0-tYxY9jJVKgvArOYbU85gmLqQUXE",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "inherits",
+      "version": "2.0.4"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17358",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 25161,
+          "end": 25469
+        }
+      ],
+      "files": "QJR2fuQA3-ArDrx5bqvCbglZ_A9X9_lwpHxGPhzAsmhU",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "ipaddr.js",
+      "version": "1.9.1"
+    },
+    {
+      "direct": true,
+      "dev": false,
+      "dead": false,
+      "id": "15430159689",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 25498,
+          "end": 25858
+        },
+        {
+          "file": "package.json",
+          "start": 521,
+          "end": 530
+        }
+      ],
+      "files": "Q-XuE8Ix1n7bXX94yey5Rl4aSWCEe0hZkPFJV2AlZxB8",
+      "toplevelAncestors": [],
+      "type": "npm",
+      "name": "marked",
+      "version": "12.0.2"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15923984496",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 25896,
+          "end": 26215
+        }
+      ],
+      "files": "QhUSl1HDz9QWoyvi-ajOyvS1iv7LuINslKpN3jrHtkCw",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "math-intrinsics",
+      "version": "1.1.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "13934",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 26249,
+          "end": 26560
+        }
+      ],
+      "files": "QOJshdn95U_zA6VRxwEpo43nFJFl1zjJsugDE76gi3LM",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "media-typer",
+      "version": "0.3.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "32075",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 26595,
+          "end": 26855
+        }
+      ],
+      "files": "QtyHrhW0evEr6yDHRrjk_AAIvxyZm4eD6tQkPlv0LqgQ",
+      "toplevelAncestors": [
+        "83468933110"
+      ],
+      "type": "npm",
+      "name": "memory-pager",
+      "version": "1.5.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "1029599353",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 26895,
+          "end": 27251
+        }
+      ],
+      "files": "QiwuXqonK9BTB0afBeF78yGTxNAz-_f3WtZtFmAz5aws",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "merge-descriptors",
+      "version": "1.0.3"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "13875",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 27281,
+          "end": 27584
+        }
+      ],
+      "files": "Q6Wq_HAtqicH1OQBmME3kCW9vOmAioiIctX1OL0mqTH0",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "methods",
+      "version": "1.1.2"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17617",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 27611,
+          "end": 27954
+        }
+      ],
+      "files": "Q2bTyhBbC7L8XBqKzzXV0bAepIaBkNKOOrb6vrCKFuXs",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "mime",
+      "version": "1.6.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "13115",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 27984,
+          "end": 28289
+        }
+      ],
+      "files": "QnteqDvmoF08mk8cReA1AqXWdQztHByFk3e6hzFDGmNk",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "mime-db",
+      "version": "1.52.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "13099",
+      "dependencies": [
+        "13115"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 28322,
+          "end": 28694
+        }
+      ],
+      "files": "Q2Wbk7ofI2XZWcz0gFOKabROxoEYwuD0H-Pm0sTdsLYk",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "mime-types",
+      "version": "2.1.35"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "30461",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 28725,
+          "end": 28979
+        }
+      ],
+      "files": "Qe7X4PW2_uVLXVB_LGZYpxJ9PSTomkRmDRHiFx-l1Fl4",
+      "toplevelAncestors": [
+        "404776390"
+      ],
+      "vulnerabilities": [
+        {
+          "ghsaId": "GHSA-xvch-5gv4-984h",
+          "range": ">=1.0.0 <1.2.6 || <0.2.4",
+          "reachabilityData": {
+            "publicComment": "",
+            "pattern": [
+              "call <minimist>"
+            ],
+            "undeterminableReachability": false
+          }
+        },
+        {
+          "ghsaId": "GHSA-vh95-rmgr-6w4m",
+          "range": "<0.2.1 || >=1.0.0 <1.2.3",
+          "reachabilityData": {
+            "publicComment": "",
+            "pattern": [
+              "call <minimist>"
+            ],
+            "undeterminableReachability": false
+          }
+        }
+      ],
+      "type": "npm",
+      "name": "minimist",
+      "version": "0.0.10",
+      "reachability": [
+        {
+          "ghsa_id": "GHSA-xvch-5gv4-984h",
+          "reachability": [
+            {
+              "type": "unreachable",
+              "affectedPurls": [
+                {
+                  "type": "npm",
+                  "name": "socket-nodegoat-demo",
+                  "version": "1.0.0"
+                },
+                {
+                  "type": "npm",
+                  "name": "express",
+                  "version": "4.21.2"
+                },
+                {
+                  "type": "npm",
+                  "name": "body-parser",
+                  "version": "1.20.3"
+                },
+                {
+                  "type": "npm",
+                  "name": "express-session",
+                  "version": "1.18.2"
+                },
+                {
+                  "type": "npm",
+                  "name": "consolidate",
+                  "version": "1.0.4"
+                },
+                {
+                  "type": "npm",
+                  "name": "swig",
+                  "version": "1.4.2"
+                },
+                {
+                  "type": "npm",
+                  "name": "marked",
+                  "version": "12.0.2"
+                },
+                {
+                  "type": "npm",
+                  "name": "helmet",
+                  "version": "7.2.0"
+                },
+                {
+                  "type": "npm",
+                  "name": "underscore",
+                  "version": "1.13.7"
+                }
+              ],
+              "workspacePath": ".",
+              "subprojectPath": "."
+            }
+          ]
+        },
+        {
+          "ghsa_id": "GHSA-vh95-rmgr-6w4m",
+          "reachability": [
+            {
+              "type": "unreachable",
+              "affectedPurls": [
+                {
+                  "type": "npm",
+                  "name": "socket-nodegoat-demo",
+                  "version": "1.0.0"
+                },
+                {
+                  "type": "npm",
+                  "name": "express",
+                  "version": "4.21.2"
+                },
+                {
+                  "type": "npm",
+                  "name": "body-parser",
+                  "version": "1.20.3"
+                },
+                {
+                  "type": "npm",
+                  "name": "express-session",
+                  "version": "1.18.2"
+                },
+                {
+                  "type": "npm",
+                  "name": "consolidate",
+                  "version": "1.0.4"
+                },
+                {
+                  "type": "npm",
+                  "name": "swig",
+                  "version": "1.4.2"
+                },
+                {
+                  "type": "npm",
+                  "name": "marked",
+                  "version": "12.0.2"
+                },
+                {
+                  "type": "npm",
+                  "name": "helmet",
+                  "version": "7.2.0"
+                },
+                {
+                  "type": "npm",
+                  "name": "underscore",
+                  "version": "1.13.7"
+                }
+              ],
+              "workspacePath": ".",
+              "subprojectPath": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "direct": true,
+      "dev": false,
+      "dead": false,
+      "id": "83468933110",
+      "dependencies": [
+        "85970163696",
+        "36858321781",
+        "15934356242"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 29009,
+          "end": 30288
+        },
+        {
+          "file": "package.json",
+          "start": 497,
+          "end": 505
+        }
+      ],
+      "files": "QaMpoKC9CZmXGqfTOMy6nnP3qk6UAt3ZJfCx7QRIboE0",
+      "toplevelAncestors": [],
+      "type": "npm",
+      "name": "mongodb",
+      "version": "6.20.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15934356242",
+      "dependencies": [
+        "15579979625",
+        "15963793692"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 30340,
+          "end": 30757
+        }
+      ],
+      "files": "QnVcs6S-TtFOGm8eSTUWD_K-HMKaGuJ2ZPox56d7_C5U",
+      "toplevelAncestors": [
+        "83468933110"
+      ],
+      "type": "npm",
+      "name": "mongodb-connection-string-url",
+      "version": "3.0.2"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "12550",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 30782,
+          "end": 31022
+        }
+      ],
+      "files": "QsgcsYPOtyhHJS028Dvu9IBW6-NIv5jUktdiwSEkcxUg",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898",
+        "51502193327"
+      ],
+      "type": "npm",
+      "name": "ms",
+      "version": "2.0.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17647",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 31055,
+          "end": 31364
+        }
+      ],
+      "files": "QTWkLsI4yiU31EGG_OMYOBOLG7VIAARtYseDdu-QmbrE",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "negotiator",
+      "version": "0.6.3"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15943112710",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 31401,
+          "end": 31800
+        }
+      ],
+      "files": "QhmhedFSn_gfpcPfqQILHnX4XxNrlthY8wjSmmRWRooM",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "object-inspect",
+      "version": "1.13.4"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "13589",
+      "dependencies": [
+        "13649"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 31834,
+          "end": 32206
+        }
+      ],
+      "files": "QrQT7oN_80y7bs-Vzq2KVXmTfIna-8jjTmXdNvkS8_TI",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "on-finished",
+      "version": "2.4.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "51467206393",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 32239,
+          "end": 32548
+        }
+      ],
+      "files": "QJVhhFRthp6vb5UFCsJ_aM5D6EHVprFGRcD97mfM2cUQ",
+      "toplevelAncestors": [
+        "51502193327"
+      ],
+      "type": "npm",
+      "name": "on-headers",
+      "version": "1.1.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "46184",
+      "dependencies": [
+        "30461",
+        "30462"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 32579,
+          "end": 32927
+        }
+      ],
+      "files": "QPyIz7pyP7QN_2AXsef_vGQ-2pCrQN9HTwGadL_AmxJk",
+      "toplevelAncestors": [
+        "404776390"
+      ],
+      "type": "npm",
+      "name": "optimist",
+      "version": "0.6.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17722",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 32958,
+          "end": 33263
+        }
+      ],
+      "files": "Q34Kh-4US3-PIhYKX6sxvGtmG-Vs8lbChyVrUsA0yxj8",
+      "toplevelAncestors": [
+        "15920039898",
+        "38864419835",
+        "51502193327"
+      ],
+      "type": "npm",
+      "name": "parseurl",
+      "version": "1.3.3"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15920038736",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 33300,
+          "end": 33566
+        }
+      ],
+      "files": "QI_E_SKVhVe9d1_FX53tJ3i4xLEWEmVVnGUTawevmI00",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "path-to-regexp",
+      "version": "0.1.12"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17778",
+      "dependencies": [
+        "17251",
+        "17358"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 33599,
+          "end": 34001
+        }
+      ],
+      "files": "QzUJIZKdqf4YzkwMNg26iX4AiqiHGm-2lu29cZSdET7E",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "proxy-addr",
+      "version": "2.0.7"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "34113016",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 34032,
+          "end": 34334
+        }
+      ],
+      "files": "Qetga1N2Xlz-lGqZGoUYWMIkdMap3AuFUHI38HAHfmFw",
+      "toplevelAncestors": [
+        "83468933110"
+      ],
+      "type": "npm",
+      "name": "punycode",
+      "version": "2.3.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15831535617",
+      "dependencies": [
+        "15921713089"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 34359,
+          "end": 34808
+        }
+      ],
+      "files": "QyfC-0Ts9BqBsiey7HpOnz6iZWRdt9ExP1IUiUii0j0o",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "qs",
+      "version": "6.13.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "61227",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 34843,
+          "end": 35156
+        }
+      ],
+      "files": "QJBxa0oKFUxoguSLkBOuQpC7UniNgH6799rsweKDGUIQ",
+      "toplevelAncestors": [
+        "51502193327"
+      ],
+      "type": "npm",
+      "name": "random-bytes",
+      "version": "1.0.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17798",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 35191,
+          "end": 35504
+        }
+      ],
+      "files": "Qkr4Q3DIiYrcTPhe969shdEZzLZnqTzL8J5i3H1vcsLw",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "range-parser",
+      "version": "1.2.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "28796",
+      "dependencies": [
+        "16937",
+        "17325",
+        "12802",
+        "18067"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 35535,
+          "end": 35989
+        }
+      ],
+      "files": "Q0R-SBbP-v765uV1i3dby8EBRSr3knd5G7sqQ3j03UO8",
+      "toplevelAncestors": [
+        "15886814509"
+      ],
+      "type": "npm",
+      "name": "raw-body",
+      "version": "2.5.2"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "13054",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 36023,
+          "end": 36610
+        }
+      ],
+      "files": "Qs0AnslUFAvPTqEd2-0-Z7cmAOeL5lVtsDNDyed2ekQU",
+      "toplevelAncestors": [
+        "15920039898",
+        "38864419835",
+        "51502193327"
+      ],
+      "type": "npm",
+      "name": "safe-buffer",
+      "version": "5.2.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "12804",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 36645,
+          "end": 36905
+        }
+      ],
+      "files": "QVD80lKy5MwI4eEhXesbg8rdyudFnTcgjyBxwuIBFvQ8",
+      "toplevelAncestors": [
+        "15886814509"
+      ],
+      "type": "npm",
+      "name": "safer-buffer",
+      "version": "2.1.2"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15886861601",
+      "dependencies": [
+        "13159",
+        "17082",
+        "17085",
+        "17137",
+        "17173",
+        "17256",
+        "17325",
+        "17617",
+        "13589",
+        "17798",
+        "17112",
+        "13229",
+        "17954"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 36932,
+          "end": 37635
+        }
+      ],
+      "files": "QkQbKgZefkr-9A6rYme2soC2_DCRI-4hhVdOfrjYoDOE",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "send",
+      "version": "0.19.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17112",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 37685,
+          "end": 37992
+        }
+      ],
+      "files": "QQJcAXqCl6frZap3E4XOu0Cb_XwaPk9MDevAikBzD3TE",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "encodeurl",
+      "version": "1.0.2"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "13229",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 38035,
+          "end": 38275
+        },
+        {
+          "file": "package-lock.json",
+          "start": 38852,
+          "end": 39092
+        }
+      ],
+      "files": "QX-Fp5AJW6NWLNGJfAdxQrtRmWJDT8NA2ch_sfJKdShw",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "ms",
+      "version": "2.1.3"
+    },
+    {
+      "direct": true,
+      "dev": false,
+      "dead": false,
+      "id": "38864419835",
+      "dependencies": [
+        "17173",
+        "17256",
+        "17722",
+        "13054",
+        "13229"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 38311,
+          "end": 38800
+        },
+        {
+          "file": "package.json",
+          "start": 636,
+          "end": 644
+        }
+      ],
+      "files": "QkDhGtplTMgZe1uJqiunxBfjBy7SoynlRuPmMs3zc4hA",
+      "toplevelAncestors": [],
+      "type": "npm",
+      "name": "serve-favicon",
+      "version": "2.5.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15887673874",
+      "dependencies": [
+        "13872659699",
+        "17137",
+        "17722",
+        "15886861601"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 39127,
+          "end": 39596
+        }
+      ],
+      "files": "QMcMGHBNqjPB7HTA_BHf_0a8gtI2c5UyMV9FfKuqFUHk",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "serve-static",
+      "version": "1.16.2"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17910",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 39633,
+          "end": 39897
+        }
+      ],
+      "files": "Q30Ysq0WzlK1E6ymmEG_HkaYiXz2_Lkjnd-YIrI3ZBg0",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "setprototypeof",
+      "version": "1.2.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15921713089",
+      "dependencies": [
+        "7620851572",
+        "15943112710",
+        "15921568702",
+        "15921567700",
+        "15921583101"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 39932,
+          "end": 40544
+        }
+      ],
+      "files": "QA6nZMpLf45o0MONlj6GDK9qqi5wvv7KGHE_mzNrh1CY",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "side-channel",
+      "version": "1.1.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15921568702",
+      "dependencies": [
+        "7620851572",
+        "15943112710"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 40584,
+          "end": 41087
+        }
+      ],
+      "files": "Q0wzUskEd9FaiCPG4-xqM92kI2NIB2eH2YOzt1yOQM38",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "side-channel-list",
+      "version": "1.0.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15921567700",
+      "dependencies": [
+        "15957763002",
+        "7620851572",
+        "15952836688",
+        "15943112710"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 41126,
+          "end": 41694
+        }
+      ],
+      "files": "Qz5LL95bqNtcTbhzjqaHRWM-p4x3HJaI46Hyxry4qwPU",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "side-channel-map",
+      "version": "1.0.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15921583101",
+      "dependencies": [
+        "15957763002",
+        "7620851572",
+        "15952836688",
+        "15943112710",
+        "15921567700"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 41737,
+          "end": 42351
+        }
+      ],
+      "files": "QMW8Ku1ygM7mxWrClj3kPv_XDYeH_5WRJpc34oHoWyEg",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "side-channel-weakmap",
+      "version": "1.0.2"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "2801854",
+      "dependencies": [
+        "30428"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 42384,
+          "end": 42735
+        }
+      ],
+      "files": "QJgf0Dnnkt2sxWn4iuGIAM-fsRdaO6kYLZrV1jXhp018",
+      "toplevelAncestors": [
+        "404776390"
+      ],
+      "type": "npm",
+      "name": "source-map",
+      "version": "0.1.34"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "32142",
+      "dependencies": [
+        "32075"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 42773,
+          "end": 43105
+        }
+      ],
+      "files": "Qcazm2X4vEZsVxVYeTxgHtpWlMZrvkwXHm6E0XqCv0Fk",
+      "toplevelAncestors": [
+        "83468933110"
+      ],
+      "type": "npm",
+      "name": "sparse-bitfield",
+      "version": "3.0.3"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17954",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 43136,
+          "end": 43441
+        }
+      ],
+      "files": "QsavUKTH9Z1mhCKn9FjyGsIlY_kyvx3TicRpccpk6Iak",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "statuses",
+      "version": "2.0.1"
+    },
+    {
+      "direct": true,
+      "dev": false,
+      "dead": false,
+      "id": "404776390",
+      "dependencies": [
+        "46184",
+        "2801855"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 43468,
+          "end": 43970
+        },
+        {
+          "file": "package.json",
+          "start": 472,
+          "end": 480
+        }
+      ],
+      "files": "Qb28iePJOiKPhiJEcLv2liU51nHjsETZlgGkJXKevXN8",
+      "toplevelAncestors": [],
+      "vulnerabilities": [
+        {
+          "ghsaId": "GHSA-2rq5-699j-x7p6",
+          "range": "<=1.4.2",
+          "reachabilityData": {
+            "publicComment": "",
+            "pattern": [
+              "call <swig>.{render,renderFile}"
+            ],
+            "undeterminableReachability": false
+          }
+        }
+      ],
+      "type": "npm",
+      "name": "swig",
+      "version": "1.4.2",
+      "reachability": [
+        {
+          "ghsa_id": "GHSA-2rq5-699j-x7p6",
+          "reachability": [
+            {
+              "type": "unreachable",
+              "affectedPurls": [
+                {
+                  "type": "npm",
+                  "name": "socket-nodegoat-demo",
+                  "version": "1.0.0"
+                },
+                {
+                  "type": "npm",
+                  "name": "express",
+                  "version": "4.21.2"
+                },
+                {
+                  "type": "npm",
+                  "name": "body-parser",
+                  "version": "1.20.3"
+                },
+                {
+                  "type": "npm",
+                  "name": "express-session",
+                  "version": "1.18.2"
+                },
+                {
+                  "type": "npm",
+                  "name": "consolidate",
+                  "version": "1.0.4"
+                },
+                {
+                  "type": "npm",
+                  "name": "swig",
+                  "version": "1.4.2"
+                },
+                {
+                  "type": "npm",
+                  "name": "marked",
+                  "version": "12.0.2"
+                },
+                {
+                  "type": "npm",
+                  "name": "helmet",
+                  "version": "7.2.0"
+                },
+                {
+                  "type": "npm",
+                  "name": "underscore",
+                  "version": "1.13.7"
+                }
+              ],
+              "workspacePath": ".",
+              "subprojectPath": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "18019",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 44005,
+          "end": 44317
+        }
+      ],
+      "files": "QaS_yg93pZy2aMgwtOiBn0ifR3qM7dmwRywEoVbxjrlk",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "toidentifier",
+      "version": "1.0.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "23640079814",
+      "dependencies": [
+        "34113016"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 44344,
+          "end": 44701
+        }
+      ],
+      "files": "Q5x_7w-7tKnA_L0LrDdv6GXjVZh3SgwyqsdPvIIPCA6U",
+      "toplevelAncestors": [
+        "83468933110"
+      ],
+      "type": "npm",
+      "name": "tr46",
+      "version": "5.1.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "13905",
+      "dependencies": [
+        "13934",
+        "13099"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 44731,
+          "end": 45133
+        }
+      ],
+      "files": "QO14yRCutaY1bJKyJdnpNp9r3xXsl7_S50DBQgSk2SAs",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "type-is",
+      "version": "1.6.18"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "2801855",
+      "dependencies": [
+        "30432",
+        "2801854",
+        "41920",
+        "2801856"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 45165,
+          "end": 45694
+        }
+      ],
+      "files": "QyplUdcG5_uQ6d4qe1PEILa49UijBV0RUJItqQbXElsU",
+      "toplevelAncestors": [
+        "404776390"
+      ],
+      "vulnerabilities": [
+        {
+          "ghsaId": "GHSA-c9f4-xj24-8jqx",
+          "range": "<2.6.0",
+          "reachabilityData": {
+            "publicComment": "",
+            "pattern": [
+              "call <uglify-js>.{defaultOptions,minify,parse}"
+            ],
+            "undeterminableReachability": false
+          }
+        }
+      ],
+      "type": "npm",
+      "name": "uglify-js",
+      "version": "2.4.24",
+      "reachability": [
+        {
+          "ghsa_id": "GHSA-c9f4-xj24-8jqx",
+          "reachability": [
+            {
+              "type": "unreachable",
+              "affectedPurls": [
+                {
+                  "type": "npm",
+                  "name": "socket-nodegoat-demo",
+                  "version": "1.0.0"
+                },
+                {
+                  "type": "npm",
+                  "name": "express",
+                  "version": "4.21.2"
+                },
+                {
+                  "type": "npm",
+                  "name": "body-parser",
+                  "version": "1.20.3"
+                },
+                {
+                  "type": "npm",
+                  "name": "express-session",
+                  "version": "1.18.2"
+                },
+                {
+                  "type": "npm",
+                  "name": "consolidate",
+                  "version": "1.0.4"
+                },
+                {
+                  "type": "npm",
+                  "name": "swig",
+                  "version": "1.4.2"
+                },
+                {
+                  "type": "npm",
+                  "name": "marked",
+                  "version": "12.0.2"
+                },
+                {
+                  "type": "npm",
+                  "name": "helmet",
+                  "version": "7.2.0"
+                },
+                {
+                  "type": "npm",
+                  "name": "underscore",
+                  "version": "1.13.7"
+                }
+              ],
+              "workspacePath": ".",
+              "subprojectPath": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "41920",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 45737,
+          "end": 46013
+        }
+      ],
+      "files": "QqppVr-ixMJt3WY32E8ZtAPlcKUZRkie7SLLLNTDFCAY",
+      "toplevelAncestors": [
+        "404776390"
+      ],
+      "type": "npm",
+      "name": "uglify-to-browserify",
+      "version": "1.0.2"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "61268",
+      "dependencies": [
+        "61227"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 46044,
+          "end": 46415
+        }
+      ],
+      "files": "QXy3amhsO2rbhXxCwrp7T22ndK2Mv6q2wECuItvqh3ZM",
+      "toplevelAncestors": [
+        "51502193327"
+      ],
+      "type": "npm",
+      "name": "uid-safe",
+      "version": "2.1.5"
+    },
+    {
+      "direct": true,
+      "dev": false,
+      "dead": false,
+      "id": "15731270557",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 46448,
+          "end": 46706
+        },
+        {
+          "file": "package.json",
+          "start": 604,
+          "end": 613
+        }
+      ],
+      "files": "QYEdnbELDdRNqTxYK4Yj7uEQoi8ulDhOWG1gJ9ZqKHVQ",
+      "toplevelAncestors": [],
+      "type": "npm",
+      "name": "underscore",
+      "version": "1.13.7"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "18067",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 46735,
+          "end": 47036
+        }
+      ],
+      "files": "QuGvysQ8bd0msa3kQ0R9MG10yl_E6mSIJ0ltY-3IFRx4",
+      "toplevelAncestors": [
+        "15886814509",
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "unpipe",
+      "version": "1.0.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "18084",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 47070,
+          "end": 47383
+        }
+      ],
+      "files": "Q0MWSCuTkpznR2ca37VxnSzpR7bFHIbeaounwFotUfFE",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "utils-merge",
+      "version": "1.0.1"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "18092",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 47410,
+          "end": 47707
+        }
+      ],
+      "files": "Q0iXCcdVcVoA8iD3Q0hcD8t_0CbusRVUmQp5uXWNiJBY",
+      "toplevelAncestors": [
+        "15920039898"
+      ],
+      "type": "npm",
+      "name": "vary",
+      "version": "1.1.2"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "17056",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 47748,
+          "end": 48080
+        }
+      ],
+      "files": "Q_91eaN57lNkskezG3cntf7hDqBzGP_3nV7di4LewoZA",
+      "toplevelAncestors": [
+        "83468933110"
+      ],
+      "type": "npm",
+      "name": "webidl-conversions",
+      "version": "7.0.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "15963793692",
+      "dependencies": [
+        "23640079814",
+        "17056"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 48113,
+          "end": 48520
+        }
+      ],
+      "files": "QsZAPF73W2qIW4vqZUl0cdqd-otQq2Q8BCEk2qnaDui0",
+      "toplevelAncestors": [
+        "83468933110"
+      ],
+      "type": "npm",
+      "name": "whatwg-url",
+      "version": "14.2.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "41921",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 48554,
+          "end": 48843
+        }
+      ],
+      "files": "QaZd3JCz0LTCokiOha1C5BhGhrD4IR2LwZRo_CqY5nsE",
+      "toplevelAncestors": [
+        "404776390"
+      ],
+      "type": "npm",
+      "name": "window-size",
+      "version": "0.1.0"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "30462",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 48874,
+          "end": 49180
+        }
+      ],
+      "files": "QxcVfnVkZlPz_F5uTZ48uUae5P3QsCppRGphLzvyrePQ",
+      "toplevelAncestors": [
+        "404776390"
+      ],
+      "type": "npm",
+      "name": "wordwrap",
+      "version": "0.0.3"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "2801856",
+      "dependencies": [
+        "41883",
+        "13915",
+        "41921",
+        "41923"
+      ],
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 49208,
+          "end": 49614
+        }
+      ],
+      "files": "Qb0L6fsp1qWBKeSFez70r_9D7wR-swFkvhCoL055UlR8",
+      "toplevelAncestors": [
+        "404776390"
+      ],
+      "type": "npm",
+      "name": "yargs",
+      "version": "3.5.4"
+    },
+    {
+      "direct": false,
+      "dev": false,
+      "dead": false,
+      "id": "41923",
+      "manifestFiles": [
+        {
+          "file": "package-lock.json",
+          "start": 49664,
+          "end": 49974
+        }
+      ],
+      "files": "QcsyVw4p0auwEhqR1SH3h0vRcleo8DFCcEbb2zwsGqUg",
+      "toplevelAncestors": [
+        "404776390"
+      ],
+      "type": "npm",
+      "name": "wordwrap",
+      "version": "0.0.2"
+    }
+  ],
+  "tier1ReachabilityScanId": "29181da2-2c1b-40e9-a096-8d00daafe13c"
+}
