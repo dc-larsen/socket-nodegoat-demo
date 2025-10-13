@@ -1,166 +1,157 @@
-/**
- * Socket Security Demo - Minimal NodeGoat Server
- *
- * This is a simplified version of OWASP NodeGoat to demonstrate
- * Socket Security's npm CLI integration with GitHub Actions.
- */
-
 "use strict";
 
 const express = require("express");
+const favicon = require("serve-favicon");
 const bodyParser = require("body-parser");
 const session = require("express-session");
-const consolidate = require("consolidate");
+// const csrf = require('csurf');
+const consolidate = require("consolidate"); // Templating library adapter for Express
 const swig = require("swig");
+// const helmet = require("helmet");
+const MongoClient = require("mongodb").MongoClient; // Driver for connecting to MongoDB
+const http = require("http");
 const marked = require("marked");
-const helmet = require("helmet");
+//const nosniff = require('dont-sniff-mimetype');
+const app = express(); // Web framework to handle routing requests
+const routes = require("./app/routes");
+const { port, db, cookieSecret } = require("./config/config"); // Application config properties
+/*
+// Fix for A6-Sensitive Data Exposure
+// Load keys for establishing secure HTTPS connection
+const fs = require("fs");
+const https = require("https");
+const path = require("path");
+const httpsOptions = {
+    key: fs.readFileSync(path.resolve(__dirname, "./artifacts/cert/server.key")),
+    cert: fs.readFileSync(path.resolve(__dirname, "./artifacts/cert/server.crt"))
+};
+*/
 
-const app = express();
-const PORT = process.env.PORT || 4000;
-
-// Security middleware (demonstrating npm dependencies)
-app.use(helmet());
-
-// Body parsing middleware
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-
-// Session management
-app.use(session({
-    secret: "socket-demo-secret",
-    resave: true,
-    saveUninitialized: true,
-    cookie: {
-        httpOnly: true,
-        maxAge: 24 * 60 * 60 * 1000 // 24 hours
+MongoClient.connect(db, (err, db) => {
+    if (err) {
+        console.log("Error: DB: connect");
+        console.log(err);
+        process.exit(1);
     }
-}));
+    console.log(`Connected to the database`);
 
-// Template engine setup
-app.engine("html", consolidate.swig);
-app.set("view engine", "html");
-app.set("views", __dirname + "/views");
+    /*
+    // Fix for A5 - Security MisConfig
+    // TODO: Review the rest of helmet options, like "xssFilter"
+    // Remove default x-powered-by response header
+    app.disable("x-powered-by");
 
-// Serve static files
-app.use(express.static(__dirname + "/public"));
+    // Prevent opening page in frame or iframe to protect from clickjacking
+    app.use(helmet.frameguard()); //xframe deprecated
 
-// Configure marked for markdown processing
-marked.setOptions({
-    sanitize: true
-});
+    // Prevents browser from caching and storing page
+    app.use(helmet.noCache());
 
-// Basic routes
-app.get("/", (req, res) => {
-    res.send(`
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>Socket Security Demo</title>
-            <style>
-                body {
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    max-width: 800px;
-                    margin: 50px auto;
-                    padding: 20px;
-                    background: #f5f5f5;
-                }
-                .container {
-                    background: white;
-                    padding: 40px;
-                    border-radius: 8px;
-                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-                }
-                h1 {
-                    color: #2c3e50;
-                    margin-bottom: 10px;
-                }
-                .subtitle {
-                    color: #7f8c8d;
-                    margin-bottom: 30px;
-                }
-                .info-box {
-                    background: #e3f2fd;
-                    border-left: 4px solid #2196f3;
-                    padding: 15px;
-                    margin: 20px 0;
-                }
-                code {
-                    background: #f4f4f4;
-                    padding: 2px 6px;
-                    border-radius: 3px;
-                    font-family: 'Courier New', monospace;
-                }
-                .footer {
-                    margin-top: 30px;
-                    padding-top: 20px;
-                    border-top: 1px solid #eee;
-                    color: #7f8c8d;
-                    font-size: 14px;
-                }
-            </style>
-        </head>
-        <body>
-            <div class="container">
-                <h1>🔒 Socket Security Demo</h1>
-                <p class="subtitle">GitHub Actions + npm CLI Reachability Integration</p>
+    // Allow loading resources only from white-listed domains
+    app.use(helmet.contentSecurityPolicy()); //csp deprecated
 
-                <div class="info-box">
-                    <strong>✅ Server is running!</strong><br>
-                    This minimal Node.js application demonstrates Socket Security's
-                    npm CLI integration for reachability analysis.
-                </div>
+    // Allow communication only on HTTPS
+    app.use(helmet.hsts());
 
-                <h2>What's Being Scanned?</h2>
-                <p>This application includes several npm dependencies:</p>
-                <ul>
-                    <li><code>express</code> - Web framework</li>
-                    <li><code>helmet</code> - Security middleware</li>
-                    <li><code>mongodb</code> - Database driver</li>
-                    <li><code>marked</code> - Markdown parser</li>
-                    <li>...and more</li>
-                </ul>
+    // TODO: Add another vuln: https://github.com/helmetjs/helmet/issues/26
+    // Enable XSS filter in IE (On by default)
+    // app.use(helmet.iexss());
+    // Now it should be used in hit way, but the README alerts that could be
+    // dangerous, like specified in the issue.
+    // app.use(helmet.xssFilter({ setOnOldIE: true }));
 
-                <h2>GitHub Actions Workflow</h2>
-                <p>When you push changes or open a PR, the Socket CLI:</p>
-                <ol>
-                    <li>Analyzes all dependencies</li>
-                    <li>Performs reachability analysis</li>
-                    <li>Generates <code>.socket.facts.json</code></li>
-                    <li>Uploads results as workflow artifacts</li>
-                </ol>
+    // Forces browser to only use the Content-Type set in the response header instead of sniffing or guessing it
+    app.use(nosniff());
+    */
 
-                <div class="footer">
-                    <p>📚 Learn more: <a href="https://docs.socket.dev">docs.socket.dev</a></p>
-                    <p>Based on <a href="https://github.com/OWASP/NodeGoat">OWASP NodeGoat</a></p>
-                </div>
-            </div>
-        </body>
-        </html>
-    `);
-});
+    // Adding/ remove HTTP Headers for security
+    app.use(favicon(__dirname + "/app/assets/favicon.ico"));
 
-app.get("/health", (req, res) => {
-    res.json({
-        status: "healthy",
-        timestamp: new Date().toISOString(),
-        dependencies: Object.keys(require("./package.json").dependencies).length
+    // Express middleware to populate "req.body" so we can access POST variables
+    app.use(bodyParser.json());
+    app.use(bodyParser.urlencoded({
+        // Mandatory in Express v4
+        extended: false
+    }));
+
+    // Enable session management using express middleware
+    app.use(session({
+        // genid: (req) => {
+        //    return genuuid() // use UUIDs for session IDs
+        //},
+        secret: cookieSecret,
+        // Both mandatory in Express v4
+        saveUninitialized: true,
+        resave: true
+        /*
+        // Fix for A5 - Security MisConfig
+        // Use generic cookie name
+        key: "sessionId",
+        */
+
+        /*
+        // Fix for A3 - XSS
+        // TODO: Add "maxAge"
+        cookie: {
+            httpOnly: true
+            // Remember to start an HTTPS server to get this working
+            // secure: true
+        }
+        */
+
+    }));
+
+    /*
+    // Fix for A8 - CSRF
+    // Enable Express csrf protection
+    app.use(csrf());
+    // Make csrf token available in templates
+    app.use((req, res, next) => {
+        res.locals.csrftoken = req.csrfToken();
+        next();
     });
-});
+    */
 
-app.get("/api/info", (req, res) => {
-    res.json({
-        app: "Socket NodeGoat Demo",
-        version: require("./package.json").version,
-        nodeVersion: process.version,
-        uptime: process.uptime()
+    // Register templating engine
+    app.engine(".html", consolidate.swig);
+    app.set("view engine", "html");
+    app.set("views", `${__dirname}/app/views`);
+    // Fix for A5 - Security MisConfig
+    // TODO: make sure assets are declared before app.use(session())
+    app.use(express.static(`${__dirname}/app/assets`));
+
+
+    // Initializing marked library
+    // Fix for A9 - Insecure Dependencies
+    marked.setOptions({
+        sanitize: true
     });
-});
+    app.locals.marked = marked;
 
-// Start server
-app.listen(PORT, () => {
-    console.log(`🚀 Socket Demo Server running on http://localhost:${PORT}`);
-    console.log(`📊 Health check: http://localhost:${PORT}/health`);
-    console.log(`🔍 Ready for Socket Security scanning!`);
-});
+    // Application routes
+    routes(app, db);
 
-module.exports = app;
+    // Template system setup
+    swig.setDefaults({
+        // Autoescape disabled
+        autoescape: false
+        /*
+        // Fix for A3 - XSS, enable auto escaping
+        autoescape: true // default value
+        */
+    });
+
+    // Insecure HTTP connection
+    http.createServer(app).listen(port, () => {
+        console.log(`Express http server listening on port ${port}`);
+    });
+
+    /*
+    // Fix for A6-Sensitive Data Exposure
+    // Use secure HTTPS protocol
+    https.createServer(httpsOptions, app).listen(port, () => {
+        console.log(`Express http server listening on port ${port}`);
+    });
+    */
+
+});

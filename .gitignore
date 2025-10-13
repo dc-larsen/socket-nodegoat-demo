@@ -1,4 +1,4 @@
-# Socket Security Demo - Git Ignore File
+# OWASP NodeGoat + Socket Security - Git Ignore File
 
 # Dependencies
 node_modules/
@@ -12,6 +12,13 @@ node_modules/
 # Socket CLI output
 # Note: .socket.facts.json is committed so Socket GitHub App can use it for Tier 1 reachability
 .socket/
+
+# NodeGoat specific
+*.db
+report*.html
+test/e2e/screenshots/
+test/e2e/videos/
+.dccache
 
 # Logs
 logs/
