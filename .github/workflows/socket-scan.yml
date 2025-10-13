@@ -35,11 +35,11 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: npm ci
-
       - name: Install Socket CLI (npm)
-        run: npm install -g @socketsecurity/cli
+        run: npm install -g socket
+
+      - name: Install project dependencies
+        run: npm install
 
       - name: Run Socket Reachability Scan
         env:
@@ -49,6 +49,8 @@ jobs:
           echo "🔍 Running Socket reachability scan..."
           echo "Working directory: $(pwd)"
           echo "Package.json exists: $(test -f package.json && echo 'yes' || echo 'no')"
+          echo "node_modules exists: $(test -d node_modules && echo 'yes' || echo 'no')"
+          echo "Dependencies installed: $(ls node_modules 2>/dev/null | wc -l) packages"
 
           # Run scan in current directory with org specified (no prompts needed)
           socket scan reach . --org david-s-github
