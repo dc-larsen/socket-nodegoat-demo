@@ -2,6 +2,8 @@
 
 [![Socket Security Scan](https://github.com/dc-larsen/socket-nodegoat-demo/actions/workflows/socket-scan.yml/badge.svg)](https://github.com/dc-larsen/socket-nodegoat-demo/actions/workflows/socket-scan.yml)
 
+> **Testing Tier 1 Reachability**: This PR tests Socket's Tier 1 reachability analysis with properly installed dependencies.
+
 This repository combines the [OWASP NodeGoat](https://github.com/OWASP/NodeGoat) vulnerable web application with [Socket Security](https://socket.dev) Tier 1 reachability analysis. It demonstrates how Socket's CLI integrates with GitHub Actions to provide advanced supply chain security scanning on real-world vulnerable applications.
 
 ## About This Project
