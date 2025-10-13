@@ -10,7 +10,7 @@ node_modules/
 .env.*.local
 
 # Socket CLI output
-.socket.facts.json
+# Note: .socket.facts.json is committed so Socket GitHub App can use it for Tier 1 reachability
 .socket/
 
 # Logs
