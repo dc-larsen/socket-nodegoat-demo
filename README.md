@@ -288,3 +288,4 @@ This project is licensed under the MIT License. See the original [OWASP NodeGoat
 
 **Ready to secure your supply chain? [Get started with Socket Security →](https://socket.dev)**
 # Test Socket scan workflow
+# Testing Socket Tier 1 Reachability
