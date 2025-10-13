@@ -3,9 +3,9 @@ run-name: Socket CLI (npm) Reachability Scan
 
 on:
   push:
-    branches: ['**']
+    branches: ['main']  # Only run on main to generate .socket.facts.json
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, synchronize, reopened]  # Run on all PRs
   issue_comment:
     types: [created]
 
