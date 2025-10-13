@@ -60,7 +60,8 @@ jobs:
           fi
 
       - name: Commit Socket Facts to repository
-        if: success()
+        # Only commit on push events to main branch, not on PRs (PRs use existing facts file)
+        if: success() && github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
