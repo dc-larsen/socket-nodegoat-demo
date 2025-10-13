@@ -295,3 +295,7 @@ This is a demonstration repository. For issues or contributions:
 ---
 
 **Ready to see real vulnerability reachability analysis? [Get started with Socket →](https://socket.dev)**
+
+## Testing Tier 1 Reachability
+
+This PR tests Socket's Tier 1 reachability analysis on the full OWASP NodeGoat application with 112 known vulnerabilities.
