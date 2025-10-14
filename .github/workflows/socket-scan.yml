@@ -1,0 +1,99 @@
+name: Socket Security Scan
+run-name: Socket CLI (npm) Reachability Scan
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+    types: [opened, synchronize, reopened]
+  issue_comment:
+    types: [created]
+
+concurrency:
+  group: socket-scan-${{ github.ref }}-${{ github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  socket-security:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Allow committing .socket.facts.json
+      pull-requests: write
+      issues: write
+      id-token: write  # For GitHub token authentication
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: ${{ github.event_name == 'pull_request' && 2 || 0 }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Socket CLI (npm)
+        run: npm install -g socket
+
+      - name: Install project dependencies
+        run: npm install
+
+      - name: Run Socket Reachability Scan
+        env:
+          SOCKET_SECURITY_API_TOKEN: ${{ secrets.SOCKET_SECURITY_API_TOKEN }}
+          GH_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "🔍 Running Socket reachability scan..."
+          echo "Working directory: $(pwd)"
+          echo "Package.json exists: $(test -f package.json && echo 'yes' || echo 'no')"
+          echo "node_modules exists: $(test -d node_modules && echo 'yes' || echo 'no')"
+          echo "Dependencies installed: $(ls node_modules 2>/dev/null | wc -l) packages"
+
+          # Run scan in current directory with org specified (no prompts needed)
+          socket scan reach . --org david-s-github
+
+          echo ""
+          echo "✅ Socket scan complete. Checking for .socket.facts.json..."
+          if [ -f ".socket.facts.json" ]; then
+            echo ".socket.facts.json generated successfully."
+            ls -lh .socket.facts.json
+          else
+            echo "⚠️ No .socket.facts.json found."
+          fi
+
+      - name: Commit the Socket Facts artifact file
+        if: success() && github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add .socket.facts.json
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          msg="Update socket.facts.json - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+          git commit -m "$msg [skip ci]"
+
+          # Pull latest changes with rebase before pushing
+          git pull --rebase origin main || {
+            echo "Rebase failed, attempting merge"
+            git pull origin main
+          }
+
+          git push
+          echo "✅ .socket.facts.json committed to repository"
+
+      - name: Upload Socket Facts artifact
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: socket-facts
+          path: ${{ github.workspace }}/.socket.facts.json
+          if-no-files-found: error
+          include-hidden-files: true
