@@ -6,8 +6,6 @@ on:
     branches: ['**']
   pull_request:
     types: [opened, synchronize, reopened]
-  issue_comment:
-    types: [created]
 
 concurrency:
   group: socket-scan-${{ github.ref }}-${{ github.sha }}
