@@ -2,8 +2,6 @@ name: Socket Security Scan
 run-name: Socket CLI (npm) Reachability Scan
 
 on:
-  push:
-    branches: ['**']
   pull_request:
     types: [opened, synchronize, reopened]
 
