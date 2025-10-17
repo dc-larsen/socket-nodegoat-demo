@@ -1,5 +1,5 @@
 name: Socket Security Scan
-run-name: Socket CLI (pnpm) Reachability Scan
+run-name: Socket CLI (npm) Reachability Scan
 
 on:
   pull_request:
@@ -19,21 +19,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
       - name: Install Socket CLI
-        run: pnpm add -g socket
+        run: npm install -g socket
 
       - name: Install project dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Run Socket Reachability Scan
         env:
