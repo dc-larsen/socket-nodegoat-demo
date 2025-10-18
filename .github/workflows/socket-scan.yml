@@ -2,8 +2,6 @@ name: Socket Security Scan
 run-name: Socket CLI (npm) Reachability Scan
 
 on:
-  push:
-    branches: ['**']
   pull_request:
     types: [opened, synchronize, reopened]
 
@@ -29,8 +27,8 @@ jobs:
       - name: Install Socket CLI
         run: npm install -g socket
 
-      - name: Install project dependencies
-        run: npm install
+      # - name: Install project dependencies
+      #   run: npm install
 
       - name: Run Socket Reachability Scan
         env:

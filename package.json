@@ -7,6 +7,7 @@
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.1",
+    "chalk": "^4.1.2",
     "consolidate": "^0.14.1",
     "csurf": "^1.8.3",
     "dont-sniff-mimetype": "^1.0.0",
@@ -18,6 +19,7 @@
     "mongodb": "^2.1.18",
     "needle": "2.2.4",
     "node-esapi": "0.0.1",
+    "axios": "^1.6.2",
     "serve-favicon": "^2.3.0",
     "swig": "^1.4.2",
     "underscore": "^1.8.3"
